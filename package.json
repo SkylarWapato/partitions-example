@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "sls deploy"
+    "deploy": "sls deploy --force"
   },
   "keywords": [],
   "author": "",
