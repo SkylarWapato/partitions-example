@@ -1,0 +1,178 @@
+service: test-management-backend
+
+provider:
+  name: aws
+  runtime: nodejs8.10
+  environment:
+  iamRoleStatements:
+  - Effect: Allow
+    Action:
+      - dynamodb:DescribeTable
+      - dynamodb:Query
+      - dynamodb:Scan
+      - dynamodb:GetItem
+      - dynamodb:PutItem
+      - dynamodb:UpdateItem
+      - dynamodb:DeleteItem
+      - dynamodb:BatchWriteItem
+    Resource:
+      - "Fn::GetAtt": [ PartitionsTable, Arn ]    
+  - Effect: Allow
+    Action:
+      - dynamodb:Query
+      - dynamodb:Scan
+    Resource: 
+      - { "Fn::GetAtt": ["PartitionsTable", "Arn" ] }
+      - Fn::Join:
+        - "/"
+        -
+          - { "Fn::GetAtt": ["PartitionsTable", "Arn" ] }
+          - "index/*"
+
+
+functions:
+  graphql:
+    handler: handler.graphqlHandler
+    events:
+    - http:
+        path: graphql
+        method: post
+        cors: true
+
+resources:
+  Resources:
+    PartitionsTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        AttributeDefinitions:
+          - AttributeName: entityId
+            AttributeType: S
+          - AttributeName: relId
+            AttributeType: S
+          - AttributeName: string_gsi_0
+            AttributeType: S
+          - AttributeName: string_gsi_1
+            AttributeType: S
+          - AttributeName: string_gsi_2
+            AttributeType: S
+          - AttributeName: string_gsi_3
+            AttributeType: S
+          - AttributeName: string_gsi_4
+            AttributeType: S
+          - AttributeName: string_gsi_5
+            AttributeType: S
+          - AttributeName: number_gsi_0
+            AttributeType: "N"
+          - AttributeName: number_gsi_1
+            AttributeType: "N"
+          - AttributeName: number_gsi_2
+            AttributeType: "N"
+        KeySchema:
+          - AttributeName: entityId
+            KeyType: HASH
+          - AttributeName: relId
+            KeyType: RANGE
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
+        TableName: Partitions
+        GlobalSecondaryIndexes:
+        - IndexName: STRING_GSI_0
+          KeySchema:
+          - AttributeName: entityId
+            KeyType: HASH
+          - AttributeName: string_gsi_0
+            KeyType: RANGE
+          Projection:
+            ProjectionType: ALL
+          ProvisionedThroughput:
+            ReadCapacityUnits: '5'
+            WriteCapacityUnits: '5'
+        - IndexName: STRING_GSI_1
+          KeySchema:
+          - AttributeName: entityId
+            KeyType: HASH
+          - AttributeName: string_gsi_1
+            KeyType: RANGE
+          Projection:
+            ProjectionType: ALL
+          ProvisionedThroughput:
+            ReadCapacityUnits: '5'
+            WriteCapacityUnits: '5'
+        - IndexName: STRING_GSI_2
+          KeySchema:
+          - AttributeName: entityId
+            KeyType: HASH
+          - AttributeName: string_gsi_2
+            KeyType: RANGE
+          Projection:
+            ProjectionType: ALL
+          ProvisionedThroughput:
+            ReadCapacityUnits: '5'
+            WriteCapacityUnits: '5'
+        - IndexName: STRING_GSI_3
+          KeySchema:
+          - AttributeName: entityId
+            KeyType: HASH
+          - AttributeName: string_gsi_3
+            KeyType: RANGE
+          Projection:
+            ProjectionType: ALL
+          ProvisionedThroughput:
+            ReadCapacityUnits: '5'
+            WriteCapacityUnits: '5'
+        - IndexName: STRING_GSI_4
+          KeySchema:
+          - AttributeName: entityId
+            KeyType: HASH
+          - AttributeName: string_gsi_4
+            KeyType: RANGE
+          Projection:
+            ProjectionType: ALL
+          ProvisionedThroughput:
+            ReadCapacityUnits: '5'
+            WriteCapacityUnits: '5'
+        - IndexName: STRING_GSI_5
+          KeySchema:
+          - AttributeName: entityId
+            KeyType: HASH
+          - AttributeName: string_gsi_5
+            KeyType: RANGE
+          Projection:
+            ProjectionType: ALL
+          ProvisionedThroughput:
+            ReadCapacityUnits: '5'
+            WriteCapacityUnits: '5'
+        - IndexName: NUMBER_GSI_0
+          KeySchema:
+          - AttributeName: entityId
+            KeyType: HASH
+          - AttributeName: number_gsi_0
+            KeyType: RANGE
+          Projection:
+            ProjectionType: ALL
+          ProvisionedThroughput:
+            ReadCapacityUnits: '5'
+            WriteCapacityUnits: '5'
+        - IndexName: NUMBER_GSI_1
+          KeySchema:
+          - AttributeName: entityId
+            KeyType: HASH
+          - AttributeName: number_gsi_1
+            KeyType: RANGE
+          Projection:
+            ProjectionType: ALL
+          ProvisionedThroughput:
+            ReadCapacityUnits: '5'
+            WriteCapacityUnits: '5'
+        - IndexName: NUMBER_GSI_2
+          KeySchema:
+          - AttributeName: entityId
+            KeyType: HASH
+          - AttributeName: number_gsi_2
+            KeyType: RANGE
+          Projection:
+            ProjectionType: ALL
+          ProvisionedThroughput:
+            ReadCapacityUnits: '5'
+            WriteCapacityUnits: '5'

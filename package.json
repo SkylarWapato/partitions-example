@@ -1,0 +1,21 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "deploy": "sls deploy"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-sdk": "^2.512.0",
+    "serverless": "^1.50.0"
+  },
+  "dependencies": {
+    "@skywap/partitions": "0.0.9",
+    "apollo-server-lambda": "^2.8.1",
+    "graphql-tools": "^4.0.5"
+  }
+}
