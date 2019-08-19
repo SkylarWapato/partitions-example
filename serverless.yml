@@ -1,4 +1,4 @@
-service: test-management-backend
+service: patitions-example
 
 provider:
   name: aws
