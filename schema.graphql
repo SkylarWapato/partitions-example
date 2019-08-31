@@ -34,3 +34,15 @@ type Parent {
   key: Int! @increment @sortable
   child: Child!
 }
+
+# Adding the @geo directive will bind data to geographic locations that can be queried
+# by location and radius
+type GeoType @geo {
+  name: String!
+  number: Int!
+}
+
+type GeoParent @geo {
+  name: String!
+  type: GeoType!
+}

@@ -7,7 +7,7 @@ const generateGraphql = require('@skywap/partitions').generateGraphql
 const types = readFileSync('./schema.graphql').toString()
 
 // generateGraphql takes a type definition file and generates your typeDefs and resolvers
-const { typeDefs, resolvers } = generateGraphql(types.toString())
+const { typeDefs, resolvers } = generateGraphql(types)
 
 const db = new DynamoDB.DocumentClient()
 
