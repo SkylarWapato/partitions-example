@@ -4,17 +4,21 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "deploy": "sls deploy --force"
+    "deploy": "sls deploy --force",
+    "remove": "sls remove --force"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "aws-sdk": "^2.512.0",
+    "bluebird": "^3.5.5",
+    "csvtojson": "^2.0.10",
+    "graphql-request": "^1.8.2",
     "serverless": "^1.50.0"
   },
   "dependencies": {
-    "@skywap/partitions": "0.0.15",
+    "@skywap/partitions": "0.0.28",
     "apollo-server-lambda": "^2.8.1",
     "graphql-tools": "^4.0.5"
   }

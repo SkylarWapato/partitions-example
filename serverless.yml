@@ -73,8 +73,8 @@ resources:
           - AttributeName: relId
             KeyType: RANGE
         ProvisionedThroughput:
-          ReadCapacityUnits: 1
-          WriteCapacityUnits: 1
+          ReadCapacityUnits: 10
+          WriteCapacityUnits: 10
         TableName: Partitions
         GlobalSecondaryIndexes:
         - IndexName: STRING_GSI_0

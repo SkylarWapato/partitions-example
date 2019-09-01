@@ -1,48 +1,6 @@
-type BasicType {
-  nonNullableFloat: Float!
-  nonNullableInt: Int!
-  nonNullableString: String!
-  nullableFloat: Float
-  nullableInt: Int
-  nullableString: String
-  stringArray: [String!]!
-  intArray: [Int!]
-  floatArray: [Float]
-}
+# Add the @geo directive to enable geo-queries
 
-# Adding the @sortable directive enables sorting on any number or string types.
-# This is accomplished using global secondary indexes and index overloading.
-# A user can configure up to 6 sortable string fields and 3 sortable number.
-# fields per type (the limit will be configurable in v1)
-type SortableType {
-  string: String! @sortable
-  int: Int! @sortable
-  float: Float! @sortable
-}
-
-# Adding the @increment directive increments any Int field by one upon creation.
-# (this can cause problems on large scale projects and may be removed by v1)
-type Child {
-  name: String!
-  key: Int! @increment
-}
-
-# In v1 a user will be able to pass arguments to the sortable directive in order
-# to sort by fields in nested type
-type Parent {
-  name: String! @sortable
-  key: Int! @increment @sortable
-  child: Child!
-}
-
-# Adding the @geo directive will bind data to geographic locations that can be queried
-# by location and radius
-type GeoType @geo {
-  name: String!
-  number: Int!
-}
-
-type GeoParent @geo {
-  name: String!
-  type: GeoType!
+type Starbucks @geo {
+  address: String!
+  storeId: String!
 }
