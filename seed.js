@@ -11,8 +11,9 @@ const mutation = /* GraphQL */ `
 mutation ($data: StarbucksCreateInput!, $latitude: Float!, $longitude: Float!) {
     createGeoScopedStarbucks(data: $data, latitude: $latitude, longitude: $longitude)
   }`
-
-// If a request fails due to stress just set this to the last executed index from the log
+///////////////////////////////////////////////////////////////////////////////////////////
+// If a request fails due to stress just set this to the last executed index from the log//
+///////////////////////////////////////////////////////////////////////////////////////////
 let startIndex = 0
 
 const run = async () => {
