@@ -1,6 +1,10 @@
 const csv = require('csvtojson')
 
 const dataFilePath = 'starbucks_us_locations.csv'
+
+///////////////////////////////
+// Paste your endpoint below //
+///////////////////////////////
 const graphqlEndpoint = ''
 
 const mutation = /* GraphQL */ `
