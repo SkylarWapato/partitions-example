@@ -1,9 +1,8 @@
 const csv = require('csvtojson')
-const concurrencyMap = require('bluebird').map
-const request = require('graphql-request').request
 
 const dataFilePath = 'starbucks_us_locations.csv'
-const graphqlEndpoint = 'https://cwpeyby31d.execute-api.us-east-1.amazonaws.com/dev/graphql'
+const graphqlEndpoint = ''
+
 const mutation = /* GraphQL */ `
 mutation ($data: StarbucksCreateInput!, $latitude: Float!, $longitude: Float!) {
     createGeoScopedStarbucks(data: $data, latitude: $latitude, longitude: $longitude)
