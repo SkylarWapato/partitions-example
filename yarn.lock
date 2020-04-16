@@ -170,10 +170,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@skywap/partitions@0.0.15":
-  version "0.0.15"
-  resolved "https://registry.yarnpkg.com/@skywap/partitions/-/partitions-0.0.15.tgz#2c052e9907b5577becb94c0fafda8b2ca43ec0fb"
-  integrity sha512-F1vOxfd4dv9DiwBS4ajIbqBxD1jTu83Tk/iAAqOUCTxFltvg1nlYmO1IQY6gdubJbWL5J7aTfltMpjAbdau+lw==
+"@skywap/partitions@0.0.28":
+  version "0.0.28"
+  resolved "https://registry.yarnpkg.com/@skywap/partitions/-/partitions-0.0.28.tgz#74def59122fb01ae47ea75177374f486b9a51e1f"
+  integrity sha512-ZiqrzZze2ZJcSqU8mrR+VMofU/J7Tne5QPJsQr4ZYXhFKos0WJtfkdWNvsJGdqzV0Bj6twHu3+42BCdU1NOWpA==
   dependencies:
     body-parser "^1.19.0"
     geohash "0.0.1"
@@ -2078,9 +2078,9 @@ http-errors@^1.7.2, http-errors@~1.7.2:
     toidentifier "1.0.0"
 
 https-proxy-agent@^2.2.2:
-  version "2.2.2"
-  resolved "https://registry.yarnpkg.com/https-proxy-agent/-/https-proxy-agent-2.2.2.tgz#271ea8e90f836ac9f119daccd39c19ff7dfb0793"
-  integrity sha512-c8Ndjc9Bkpfx/vCJueCPy0jlP4ccCCSNDp8xwCZzPjKJUm+B+u9WX2x98Qx4n1PiMNTWo3D7KK5ifNV/yJyRzg==
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/https-proxy-agent/-/https-proxy-agent-2.2.4.tgz#4ee7a737abd92678a293d9b34a1af4d0d08c787b"
+  integrity sha512-OmvfoQ53WLjtA9HeYP9RNrWMJzzAz1JGaSFr1nijg0PVR1JaD/xbJq1mdEIIlxGpXp9eSe/O2LgU9DJmTPd0Eg==
   dependencies:
     agent-base "^4.3.0"
     debug "^3.1.0"
