@@ -170,10 +170,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@skywap/partitions@0.0.15":
-  version "0.0.15"
-  resolved "https://registry.yarnpkg.com/@skywap/partitions/-/partitions-0.0.15.tgz#2c052e9907b5577becb94c0fafda8b2ca43ec0fb"
-  integrity sha512-F1vOxfd4dv9DiwBS4ajIbqBxD1jTu83Tk/iAAqOUCTxFltvg1nlYmO1IQY6gdubJbWL5J7aTfltMpjAbdau+lw==
+"@skywap/partitions@0.0.28":
+  version "0.0.28"
+  resolved "https://registry.yarnpkg.com/@skywap/partitions/-/partitions-0.0.28.tgz#74def59122fb01ae47ea75177374f486b9a51e1f"
+  integrity sha512-ZiqrzZze2ZJcSqU8mrR+VMofU/J7Tne5QPJsQr4ZYXhFKos0WJtfkdWNvsJGdqzV0Bj6twHu3+42BCdU1NOWpA==
   dependencies:
     body-parser "^1.19.0"
     geohash "0.0.1"
@@ -2612,9 +2612,9 @@ lodash.uniq@^4.5.0:
   integrity sha1-0CJTc662Uq3BvILklFM5qEJ1R3M=
 
 lodash@4.17.x, lodash@^4.17.11, lodash@^4.17.12, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.5, lodash@^4.3.0, lodash@^4.8.0:
-  version "4.17.15"
-  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.15.tgz#b447f6670a0455bbfeedd11392eff330ea097548"
-  integrity sha512-8xOcRHvCjnocdS5cpwXQXVzmmh5e5+saE2QGoeQmbKmRS6J3VQppPOIt0MnmE+4xlZoumy0GPG0D0MVIQbNA1A==
+  version "4.17.19"
+  resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.19.tgz#e48ddedbe30b3321783c5b4301fbd353bc1e4a4b"
+  integrity sha512-JNvd8XER9GQX0v2qJgsaN/mzFCNA5BRe/j8JN9d+tWyGLSodKQHKFicdwNYzWwI3wjRnaKPsGj1XkBjx/F96DQ==
 
 long@^4.0.0:
   version "4.0.0"
