@@ -170,10 +170,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@skywap/partitions@0.0.15":
-  version "0.0.15"
-  resolved "https://registry.yarnpkg.com/@skywap/partitions/-/partitions-0.0.15.tgz#2c052e9907b5577becb94c0fafda8b2ca43ec0fb"
-  integrity sha512-F1vOxfd4dv9DiwBS4ajIbqBxD1jTu83Tk/iAAqOUCTxFltvg1nlYmO1IQY6gdubJbWL5J7aTfltMpjAbdau+lw==
+"@skywap/partitions@0.0.28":
+  version "0.0.28"
+  resolved "https://registry.yarnpkg.com/@skywap/partitions/-/partitions-0.0.28.tgz#74def59122fb01ae47ea75177374f486b9a51e1f"
+  integrity sha512-ZiqrzZze2ZJcSqU8mrR+VMofU/J7Tne5QPJsQr4ZYXhFKos0WJtfkdWNvsJGdqzV0Bj6twHu3+42BCdU1NOWpA==
   dependencies:
     body-parser "^1.19.0"
     geohash "0.0.1"
@@ -2146,9 +2146,9 @@ inherits@2.0.3:
   integrity sha1-Yzwsg+PaQqUC9SRmAiSA9CCCYd4=
 
 ini@^1.3.4, ini@~1.3.0:
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.5.tgz#eee25f56db1c9ec6085e0c22778083f596abf927"
-  integrity sha512-RZY5huIKCMRWDUqZlEi72f/lmXKMvuszcMBduliQ3nnWbx9X/ZBQO7DijMEYS9EhHBb2qacRUMtC7svLwe0lcw==
+  version "1.3.7"
+  resolved "https://registry.yarnpkg.com/ini/-/ini-1.3.7.tgz#a09363e1911972ea16d7a8851005d84cf09a9a84"
+  integrity sha512-iKpRpXP+CrP2jyrxvg1kMUpXDyRUFDWurxbnVT1vQPx+Wz9uCYsMIqYuSBLV+PAaZG/d7kRLKRFc9oDMsH+mFQ==
 
 inquirer@^1.0.2:
   version "1.2.3"
