@@ -170,10 +170,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@skywap/partitions@0.0.15":
-  version "0.0.15"
-  resolved "https://registry.yarnpkg.com/@skywap/partitions/-/partitions-0.0.15.tgz#2c052e9907b5577becb94c0fafda8b2ca43ec0fb"
-  integrity sha512-F1vOxfd4dv9DiwBS4ajIbqBxD1jTu83Tk/iAAqOUCTxFltvg1nlYmO1IQY6gdubJbWL5J7aTfltMpjAbdau+lw==
+"@skywap/partitions@0.0.28":
+  version "0.0.28"
+  resolved "https://registry.yarnpkg.com/@skywap/partitions/-/partitions-0.0.28.tgz#74def59122fb01ae47ea75177374f486b9a51e1f"
+  integrity sha512-ZiqrzZze2ZJcSqU8mrR+VMofU/J7Tne5QPJsQr4ZYXhFKos0WJtfkdWNvsJGdqzV0Bj6twHu3+42BCdU1NOWpA==
   dependencies:
     body-parser "^1.19.0"
     geohash "0.0.1"
@@ -2941,9 +2941,9 @@ object-keys@^1.0.12:
   integrity sha512-NuAESUOUMrlIXOfHKzD6bpPu3tYt3xvjNdRIQ+FeT0lNb4K8WR70CaDxhuNguS2XG+GjkyMwOzsN5ZktImfhLA==
 
 object-path@^0.11.4:
-  version "0.11.4"
-  resolved "https://registry.yarnpkg.com/object-path/-/object-path-0.11.4.tgz#370ae752fbf37de3ea70a861c23bba8915691949"
-  integrity sha1-NwrnUvvzfePqcKhhwju6iRVpGUk=
+  version "0.11.8"
+  resolved "https://registry.yarnpkg.com/object-path/-/object-path-0.11.8.tgz#ed002c02bbdd0070b78a27455e8ae01fc14d4742"
+  integrity sha512-YJjNZrlXJFM42wTBn6zgOJVar9KFJvzx6sTWDte8sWZF//cnjl0BxHNpfZx+ZffXX63A9q0b1zsFiBX4g4X5KA==
 
 object-visit@^1.0.0:
   version "1.0.1"
