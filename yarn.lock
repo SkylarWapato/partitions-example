@@ -170,10 +170,10 @@
   resolved "https://registry.yarnpkg.com/@sindresorhus/is/-/is-0.14.0.tgz#9fb3a3cf3132328151f353de4632e01e52102bea"
   integrity sha512-9NET910DNaIPngYnLLPeg+Ogzqsi9uM4mSboU5y6p8S5DzMTVEsJZrawi+BoDNUVBa2DhJqQYUFvMDfgU062LQ==
 
-"@skywap/partitions@0.0.15":
-  version "0.0.15"
-  resolved "https://registry.yarnpkg.com/@skywap/partitions/-/partitions-0.0.15.tgz#2c052e9907b5577becb94c0fafda8b2ca43ec0fb"
-  integrity sha512-F1vOxfd4dv9DiwBS4ajIbqBxD1jTu83Tk/iAAqOUCTxFltvg1nlYmO1IQY6gdubJbWL5J7aTfltMpjAbdau+lw==
+"@skywap/partitions@0.0.28":
+  version "0.0.28"
+  resolved "https://registry.yarnpkg.com/@skywap/partitions/-/partitions-0.0.28.tgz#74def59122fb01ae47ea75177374f486b9a51e1f"
+  integrity sha512-ZiqrzZze2ZJcSqU8mrR+VMofU/J7Tne5QPJsQr4ZYXhFKos0WJtfkdWNvsJGdqzV0Bj6twHu3+42BCdU1NOWpA==
   dependencies:
     body-parser "^1.19.0"
     geohash "0.0.1"
@@ -2766,9 +2766,9 @@ mkdirp@^0.5.1:
     minimist "0.0.8"
 
 moment@^2.24.0:
-  version "2.24.0"
-  resolved "https://registry.yarnpkg.com/moment/-/moment-2.24.0.tgz#0d055d53f5052aa653c9f6eb68bb5d12bf5c2b5b"
-  integrity sha512-bV7f+6l2QigeBBZSM/6yTNq4P2fNpSWj/0e7jQcy87A8e7o2nAfP/34/2ky5Vw4B9S446EtIhodAzkFCcR4dQg==
+  version "2.29.4"
+  resolved "https://registry.yarnpkg.com/moment/-/moment-2.29.4.tgz#3dbe052889fe7c1b2ed966fcb3a77328964ef108"
+  integrity sha512-5LC9SOxjSc2HF6vO2CyuTDNivEdoz2IvyJJGj6X8DJ0eFyfszE0QiEd+iXmBvUP3WHxSjFH/vIsA0EN00cgr8w==
 
 ms@2.0.0:
   version "2.0.0"
